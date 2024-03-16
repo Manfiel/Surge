@@ -33,6 +33,6 @@
     "icons": ["https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.png", "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.png"]
   }],
   "task": [{
-    "config": "59 29 15 * * * https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js, tag=邮储银行"
+    "config": "* * * https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js, tag=邮储银行"
   }]
 }
