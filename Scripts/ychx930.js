@@ -14,18 +14,18 @@ $.done();
 
 function seckill() { 
 	return $.http.post({
-			url: 'https://psbc.huajifen.com/gateway/merchant/order/createOrder',
-			headers: {
-                'Host': 'psbc.huajifen.com',
-                'Accept': 'application/json, text/plain, */*',
-                'utmSource': 'mobileAppBank',
-                'Accept-Language': 'zh-CN,zh-Hans;q=0.9',
-                'Content-Type': 'application/json;charset=UTF-8',
-                'Origin': 'https://psbc.huajifen.com',
-                'bankCode': '6100',
-                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 /sa-sdk-ios/sensors-verify/ibfp.psbc.com?credit  CreditCardAppNew',
-                'Referer': 'https://psbc.huajifen.com/merchantFront/orderConfirmCup/102298/20050',
-                'Cookie': 'MSESSIONID=14e80242-92f3-4f37-a3ba-c56e276a8c8a; UqZBpD3n3iTJDwxS=v1PKB+g8Sc+75'
+		url: 'https://psbc.huajifen.com/gateway/merchant/order/createOrder',
+		headers: {
+	                'Host': 'psbc.huajifen.com',
+	                'Accept': 'application/json, text/plain, */*',
+	                'utmSource': 'mobileAppBank',
+	                'Accept-Language': 'zh-CN,zh-Hans;q=0.9',
+	                'Content-Type': 'application/json;charset=UTF-8',
+	                'Origin': 'https://psbc.huajifen.com',
+	                'bankCode': '6100',
+	                'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 /sa-sdk-ios/sensors-verify/ibfp.psbc.com?credit  CreditCardAppNew',
+	                'Referer': 'https://psbc.huajifen.com/merchantFront/orderConfirmCup/102298/20050',
+	                'Cookie': 'MSESSIONID=14e80242-92f3-4f37-a3ba-c56e276a8c8a; UqZBpD3n3iTJDwxS=v1PKB+g8Sc+75'
             },
             body: JSON.stringify({
                 'productType': '2',
