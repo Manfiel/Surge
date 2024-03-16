@@ -36,7 +36,9 @@ let option = {
         'showLie': '\u8BA2\u5355\u8BE6\u60C5\u9875'
     })
 }
-let result = await $.http.post(options).then(response => response.body)
+let result = $.post(options, callback(response))
+
+
 console.log(result)
 
 
