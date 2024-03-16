@@ -28,10 +28,9 @@
       "desc": "嗯嗯嗯"
     }],
     "script": "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js",
-    "author": "@mocha",
-    "script": "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js",
-  },
+    "author": "@mocha"
+  }],
   "task": [{
-    "config": "59 29 15 * * * https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js, tag=邮储银行",
+    "config": "59 29 15 * * * https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js, tag=邮储银行"
   }]
 }
