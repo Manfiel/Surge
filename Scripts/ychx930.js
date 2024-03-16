@@ -64,7 +64,7 @@ async function startseckill(url, item) {
         return false;
     }
 }
-function nobyda() {
+function mocha() {
 	const isSurge = typeof $httpClient != "undefined";
 	const isQuanX = typeof $task != "undefined";
 	const isNode = typeof require == "function";
