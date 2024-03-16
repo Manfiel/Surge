@@ -45,6 +45,7 @@ function seckill(index) {
     url.headers['Accept-Language'] = 'zh-CN,zh-Hans;q=0.9';
     url.headers['Origin'] = 'https://psbc.huajifen.com';
     url.headers['bankCode'] = '6100';
+    url.headers['Content-Type'] = 'application/json;charset=UTF-8';
     url.headers['cookie'] = $.cookie;
 
 
