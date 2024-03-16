@@ -14,8 +14,8 @@ $.done();
 
 function seckill() { 
 	return $.http.post({
-			url: 'https://psbc.huajifen.com/gateway/merchant/order/createOrder',
-			headers: {
+		url: 'https://psbc.huajifen.com/gateway/merchant/order/createOrder',
+		headers: {
                 'Host': 'psbc.huajifen.com',
                 'Accept': 'application/json, text/plain, */*',
                 'utmSource': 'mobileAppBank',
