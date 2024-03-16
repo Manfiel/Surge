@@ -1,0 +1,37 @@
+{
+  "id": "mocha.app.sub",
+  "name": "mocha 脚本订阅",
+  "description": "哎呀呀..供芳芳用..",
+  "author": "@mocha",
+  "icon": "https://avatars2.githubusercontent.com/u/53217160",
+  "repo": "https://github.com/manfiel/surge",
+  "apps": [{
+    "id": "ychx",
+    "name": "邮储银行",
+    "descs_html": [
+      "谈恋爱啦谈恋爱啦"
+    ],
+    "keys": ["verifycode", "cookieYC"],
+    "settings": [{
+      "id": "verifycode",
+      "name": "验证码",
+      "val": "",
+      "type": "text",
+      "placeholder": "(点击以展开说明)",
+      "desc": "嗯嗯嗯"
+    }, {
+      "id": "cookieYC",
+      "name": "cookies",
+      "val": "MSESSIONID=",
+      "type": "text",
+      "placeholder": "(点击以展开说明)",
+      "desc": "嗯嗯嗯"
+    }],
+    "script": "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js",
+    "author": "@mocha",
+    "script": "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js",
+  },
+  "task": [{
+    "config": "59 29 15 * * * https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js, tag=邮储银行",
+  }]
+}
