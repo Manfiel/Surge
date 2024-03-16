@@ -25,7 +25,7 @@ function seckill() {
                 'bankCode': '6100',
                 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 /sa-sdk-ios/sensors-verify/ibfp.psbc.com?credit  CreditCardAppNew',
                 'Referer': 'https://psbc.huajifen.com/merchantFront/orderConfirmCup/102298/20050',
-                'Cookie': cookie
+                'Cookie': 'MSESSIONID=14e80242-92f3-4f37-a3ba-c56e276a8c8a; UqZBpD3n3iTJDwxS=v1PKB+g8Sc+75'
             },
             body: JSON.stringify({
                 'productType': '2',
@@ -35,7 +35,7 @@ function seckill() {
                 'buyQty': 1,
                 'storeId': '',
                 'tokenValue': '686989',
-                'authCode': verifycode,
+                'authCode': '1111',
                 'smsCode': '',
                 'cupBrandId': '',
                 'city': '\u626C\u5DDE\u5E02',
