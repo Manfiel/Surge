@@ -6,7 +6,7 @@
   "icon": "https://avatars2.githubusercontent.com/u/53217160",
   "repo": "https://github.com/manfiel/surge",
   "apps": [{
-    "id": "ychx",
+    "id": "ycyh",
     "name": "邮储银行",
     "descs_html": [
       "谈恋爱啦谈恋爱啦"
@@ -28,7 +28,9 @@
       "desc": "嗯嗯嗯"
     }],
     "script": "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js",
-    "author": "@mocha"
+    "author": "@mocha",
+    "repo": "https://google.com",
+    "icons": ["https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.png", "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.png"]
   }],
   "task": [{
     "config": "59 29 15 * * * https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js, tag=邮储银行"
