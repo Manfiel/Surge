@@ -22,7 +22,7 @@ function seckill(index) {
       url: 'https://psbc.huajifen.com/gateway/merchant/order/createOrder',
       headers: {},
       body: JSON.stringify({
-        'productType': '2',
+        'productType': '1',
         'productId': 106956,
         'promotionId': 20790,
         'buyType': '1',
@@ -41,7 +41,12 @@ function seckill(index) {
     url.headers['Referer'] = 'https://psbc.huajifen.com/merchantFront/orderConfirmCup/102298/20050';
     url.headers['Accept'] = 'application/json, text/plain, */*';
     url.headers['User-Agent'] = 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 /sa-sdk-ios/sensors-verify/ibfp.psbc.com?credit  CreditCardAppNew';
+    url.headers['utmSource'] = 'mobileAppBank';
+    url.headers['Accept-Language'] = 'zh-CN,zh-Hans;q=0.9';
+    url.headers['Origin'] = 'https://psbc.huajifen.com';
+    url.headers['bankCode'] = '6100';
     url.headers['cookie'] = $.cookie;
+
 
     $.post(url, (error, response, data) => {
       try {
