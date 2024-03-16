@@ -64,3 +64,65 @@ async function startseckill(url, item) {
         return false;
     }
 }
+function nobyda() {
+	const isSurge = typeof $httpClient != "undefined";
+	const isQuanX = typeof $task != "undefined";
+	const isNode = typeof require == "function";
+	const node = (() => {
+		if (isNode) {
+			const request = require('request');
+			return {
+				request
+			}
+		} else {
+			return null;
+		}
+	})()
+	const adapterStatus = (response) => {
+		if (response) {
+			if (response.status) {
+				response["statusCode"] = response.status
+			} else if (response.statusCode) {
+				response["status"] = response.statusCode
+			}
+		}
+		return response
+	}
+	this.read = (key) => {
+		if (isQuanX) return $prefs.valueForKey(key)
+		if (isSurge) return $persistentStore.read(key)
+	}
+	this.notify = (title, subtitle, message) => {
+		if (isQuanX) $notify(title, subtitle, message)
+		if (isSurge) $notification.post(title, subtitle, message)
+		if (isNode) console.log(`${title}\n${subtitle}\n${message}`)
+	}
+	this.post = (options, callback) => {
+		options.headers['User-Agent'] = 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 /sa-sdk-ios/sensors-verify/ibfp.psbc.com?credit  CreditCardAppNew'
+		if (isQuanX) {
+			if (typeof options == "string") options = {
+				url: options
+			}
+			options["method"] = "POST"
+			$task.fetch(options).then(response => {
+				callback(null, adapterStatus(response), response.body)
+			}, reason => callback(reason.error, null, null))
+		}
+		if (isSurge) {
+			options.headers['X-Surge-Skip-Scripting'] = false
+			$httpClient.post(options, (error, response, body) => {
+				callback(error, adapterStatus(response), body)
+			})
+		}
+		if (isNode) {
+			node.request.post(options, (error, response, body) => {
+				callback(error, adapterStatus(response), body)
+			})
+		}
+	}
+	this.done = () => {
+		if (isQuanX || isSurge) {
+			$done()
+		}
+	}
+};
