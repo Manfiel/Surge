@@ -9,13 +9,20 @@
     "id": "ycyh",
     "name": "邮储银行",
     "descs_html": [
-      "谈恋爱啦谈恋爱啦"
+      "芳芳谈恋爱啦芳芳谈恋爱啦"
     ],
-    "keys": ["verifycode", "cookieYC"],
+    "keys": ["verifycode", "cookieYC", "numYC"],
     "settings": [{
       "id": "verifycode",
       "name": "验证码",
       "val": "",
+      "type": "text",
+      "placeholder": "(点击以展开说明)",
+      "desc": "嗯嗯嗯"
+    }, {
+      "id": "numYC",
+      "name": "循环次数",
+      "val": "5",
       "type": "text",
       "placeholder": "(点击以展开说明)",
       "desc": "嗯嗯嗯"
@@ -33,6 +40,6 @@
     "icons": ["https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.png", "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.png"]
   }],
   "task": [{
-    "config": "* * * https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ychx930.js, tag=邮储银行"
+    "config": "59 29 10 * * * https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ycyh1030.js, tag=邮储银行1030"
   }]
 }
