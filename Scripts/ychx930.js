@@ -1,5 +1,5 @@
-const cookieName = '222'
-const cookieKey = '111'
+const cookie = 'cookieYC'
+const verifycode = 'verifycode'
 const chavy = init()
 
 seckill()
@@ -14,7 +14,7 @@ function seckill() {
   url.headers['Host'] = 'api.dongqiudi.com'
   url.headers['User-Agent'] = 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 /sa-sdk-ios/sensors-verify/ibfp.psbc.com?credit  CreditCardAppNew'
   url.headers['Accept-Language'] = 'zh-CN,zh-Hans;q=0.9'
-  url.headers['Cookie'] = 'MSESSIONID=b2bd25e0-f5c9-407b-a569-a45f5162806d'
+  url.headers['Cookie'] = cookie
   url.body = JSON.stringify({
     "productType": "1",
     "productId": 106956,
@@ -23,7 +23,7 @@ function seckill() {
     "buyQty": 1,
     "storeId": "",
     "tokenValue": "103846",
-    "authCode": "ed8z",
+    "authCode": verifycode,
     "smsCode": "",
     "cupBrandId": "",
     "city": "扬州市",
