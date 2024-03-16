@@ -1,5 +1,5 @@
 
-let $ = new nobyda();
+let $ = new mocha();
 
 let verifycode = $.read('verifycode') || 'zcdm';
 
