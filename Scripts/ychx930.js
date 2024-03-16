@@ -1,7 +1,6 @@
-const cookieName = '懂球帝'
-const cookieKey = 'chavy_cookie_dongqiudi'
+const cookieName = '222'
+const cookieKey = '111'
 const chavy = init()
-const cookieVal = JSON.parse(chavy.getdata(cookieKey))
 
 seckill()
 
