@@ -37,7 +37,7 @@
     "script": "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ycyh1030.js",
     "author": "@mocha",
     "repo": "https://google.com",
-    "icons": ["https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.png", "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.png"]
+    "icons": ["https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.jpg", "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.jpg"]
   }],
   "task": [{
     "config": "59 29 10 * * * https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/ycyh1030.js, tag=邮储银行1030"
