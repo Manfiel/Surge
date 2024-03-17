@@ -3,7 +3,7 @@
   "name": "mocha 脚本订阅",
   "description": "哎呀呀..供芳芳用..",
   "author": "@mocha",
-  "icon": "https://avatars2.githubusercontent.com/u/53217160",
+  "icon": "https://raw.githubusercontent.com/Manfiel/Surge/master/Scripts/mocha.jpg",
   "repo": "https://github.com/manfiel/surge",
   "apps": [{
     "id": "ycyh",
