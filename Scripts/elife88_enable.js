@@ -1,9 +1,16 @@
 let body = JSON.parse($response.body);
-if ("limitCode" in body) {
-    delete body.limitCode;
+if ("data" in body && Array.isArray(body.data)) {
+    body.data.forEach(activity => {
+        if ("awardList" in activity && Array.isArray(activity.awardList)) {
+            activity.awardList.forEach(award => {
+                if ("limitCode" in award) {
+                    delete award.limitCode;
+                }
+                if ("limitMsg" in award) {
+                    delete award.limitMsg;
+                }
+            });
+        }
+    });
 }
-if ("limitMsg" in body) {
-    delete body.limitMsg;
-}
-body = JSON.stringify(body);
-$done({body});
+$done({body: JSON.stringify(body)});
