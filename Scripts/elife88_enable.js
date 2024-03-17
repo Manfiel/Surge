@@ -1,8 +1,8 @@
 let body = JSON.parse($response.body);
-if ("limit" in body) {
+if ("limitCode" in body) {
     delete body.limitCode;
 }
-if ("limit_code" in body) {
+if ("limitMsg" in body) {
     delete body.limitMsg;
 }
 body = JSON.stringify(body);
