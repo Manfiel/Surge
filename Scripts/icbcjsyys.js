@@ -1,1 +1,1 @@
-$done();
+$done({body: $response.body});
