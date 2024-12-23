@@ -1,17 +1,4 @@
-let body = JSON.parse($response.body);
+let headers = $response.headers;
+headers['Date'] = 'Mon, 23 Dec 2024 15:30:00 GMT';
 
-let currentDate = new Date();
-let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-let day = days[currentDate.getUTCDay()];
-let date = currentDate.getUTCDate();
-let month = months[currentDate.getUTCMonth()];
-let year = currentDate.getUTCFullYear();
-let time = "15:30:00 GMT";
-
-body.headers = body.headers || {};
-body.headers.date = `${day}, ${date} ${month} ${year} ${time}`;
-
-// 转换为字符串
-body = JSON.stringify(body);
-$done({ body });
+$done({headers});
